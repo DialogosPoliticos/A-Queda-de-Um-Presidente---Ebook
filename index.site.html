@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-book – Venda Oficial</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .ebook-image img {
+      max-width: 320px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+      margin-bottom: 30px;
+    }
+
+    .buy-button {
+      display: inline-block;
+      padding: 16px 36px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      background: linear-gradient(135deg, #b00000, #ff0000);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
+    }
+
+    .buy-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 40px rgba(255, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- SLOT DA IMAGEM -->
+    <div class="ebook-image">
+      <img src="capa.ebook.png" alt="Capa do E-book">
+    </div>
+
+    <!-- BOTÃO DE COMPRA -->
+    <a 
+      class="buy-button" 
+      href="https://pay.cakto.com.br/38ijjpx_713975" 
+      target="_blank"
+    >
+      COMPRAR
+    </a>
+
+  </div>
+
+</body>
+</html>
